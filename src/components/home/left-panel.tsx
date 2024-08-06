@@ -34,11 +34,15 @@ const LeftPanel = () => {
 					<UserButton />
 
 					<div className='flex items-center gap-3'>
-						<UserListDialog />
-						{/* <MessageSquareDiff size={20} /> */}
-						{/* {isAuthenticated && <UserListDialog />} */}
+						{isAuthenticated && <UserListDialog />}
 						<ThemeSwitch />
 					</div>
+					{/* <div className='flex items-center gap-3'>
+						<UserListDialog />
+						<MessageSquareDiff size={20} />
+						{isAuthenticated && <UserListDialog />}
+						<ThemeSwitch />
+					</div> */}
 				</div>
 				<div className='p-3 flex items-center'>
 					{/* Search */}
