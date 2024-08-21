@@ -1,4 +1,4 @@
-import { Laugh, Mic, Plus, Send } from "lucide-react";
+import { Laugh, Plus, Send } from "lucide-react";
 import { Input } from "../ui/input";
 import { useState } from "react";
 import { Button } from "../ui/button";
@@ -58,26 +58,17 @@ const MessageInput = () => {
 					/>
 				</div>
 				<div className='mr-4 flex items-center gap-3'>
-					{msgText.length > 0 ? (
-						<Button
-							type='submit'
-							size={"sm"}
-							className='bg-transparent text-foreground hover:bg-transparent'
-						>
-							<Send />
-						</Button>
-					) : (
-						<Button
-							type='submit'
-							size={"sm"}
-							className='bg-transparent text-foreground hover:bg-transparent'
-						>
-							<Mic />
-						</Button>
-					)}
+					<Button
+						type='submit'
+						size={"sm"}
+						className='bg-transparent text-foreground hover:bg-transparent'
+					>
+						<Send />
+					</Button>
 				</div>
 			</form>
 		</div>
 	);
 };
+
 export default MessageInput;
